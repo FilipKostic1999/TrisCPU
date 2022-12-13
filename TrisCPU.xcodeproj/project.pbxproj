@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C17C4AED2947971100D2A209 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C4AEC2947971100D2A209 /* AppDelegate.swift */; };
+		C17C4AEF2947971100D2A209 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C4AEE2947971100D2A209 /* SceneDelegate.swift */; };
+		C17C4AF12947971100D2A209 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C4AF02947971100D2A209 /* ViewController.swift */; };
+		C17C4AF42947971100D2A209 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17C4AF22947971100D2A209 /* Main.storyboard */; };
+		C17C4AF62947971A00D2A209 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C17C4AF52947971A00D2A209 /* Assets.xcassets */; };
+		C17C4AF92947971A00D2A209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17C4AF72947971A00D2A209 /* LaunchScreen.storyboard */; };
+		C17C4B042947971B00D2A209 /* TrisCPUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C4B032947971B00D2A209 /* TrisCPUTests.swift */; };
+		C17C4B0E2947971B00D2A209 /* TrisCPUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C4B0D2947971B00D2A209 /* TrisCPUUITests.swift */; };
+		C17C4B102947971B00D2A209 /* TrisCPUUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C4B0F2947971B00D2A209 /* TrisCPUUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C17C4B002947971B00D2A209 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C17C4AE12947971100D2A209 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C17C4AE82947971100D2A209;
+			remoteInfo = TrisCPU;
+		};
+		C17C4B0A2947971B00D2A209 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C17C4AE12947971100D2A209 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C17C4AE82947971100D2A209;
+			remoteInfo = TrisCPU;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C17C4AE92947971100D2A209 /* TrisCPU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrisCPU.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C17C4AEC2947971100D2A209 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C17C4AEE2947971100D2A209 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C17C4AF02947971100D2A209 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C17C4AF32947971100D2A209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C17C4AF52947971A00D2A209 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C17C4AF82947971A00D2A209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C17C4AFA2947971A00D2A209 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C17C4AFF2947971B00D2A209 /* TrisCPUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrisCPUTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C17C4B032947971B00D2A209 /* TrisCPUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrisCPUTests.swift; sourceTree = "<group>"; };
+		C17C4B092947971B00D2A209 /* TrisCPUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrisCPUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C17C4B0D2947971B00D2A209 /* TrisCPUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrisCPUUITests.swift; sourceTree = "<group>"; };
+		C17C4B0F2947971B00D2A209 /* TrisCPUUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrisCPUUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C17C4AE62947971100D2A209 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C17C4AFC2947971B00D2A209 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C17C4B062947971B00D2A209 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C17C4AE02947971100D2A209 = {
+			isa = PBXGroup;
+			children = (
+				C17C4AEB2947971100D2A209 /* TrisCPU */,
+				C17C4B022947971B00D2A209 /* TrisCPUTests */,
+				C17C4B0C2947971B00D2A209 /* TrisCPUUITests */,
+				C17C4AEA2947971100D2A209 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C17C4AEA2947971100D2A209 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C17C4AE92947971100D2A209 /* TrisCPU.app */,
+				C17C4AFF2947971B00D2A209 /* TrisCPUTests.xctest */,
+				C17C4B092947971B00D2A209 /* TrisCPUUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C17C4AEB2947971100D2A209 /* TrisCPU */ = {
+			isa = PBXGroup;
+			children = (
+				C17C4AEC2947971100D2A209 /* AppDelegate.swift */,
+				C17C4AEE2947971100D2A209 /* SceneDelegate.swift */,
+				C17C4AF02947971100D2A209 /* ViewController.swift */,
+				C17C4AF22947971100D2A209 /* Main.storyboard */,
+				C17C4AF52947971A00D2A209 /* Assets.xcassets */,
+				C17C4AF72947971A00D2A209 /* LaunchScreen.storyboard */,
+				C17C4AFA2947971A00D2A209 /* Info.plist */,
+			);
+			path = TrisCPU;
+			sourceTree = "<group>";
+		};
+		C17C4B022947971B00D2A209 /* TrisCPUTests */ = {
+			isa = PBXGroup;
+			children = (
+				C17C4B032947971B00D2A209 /* TrisCPUTests.swift */,
+			);
+			path = TrisCPUTests;
+			sourceTree = "<group>";
+		};
+		C17C4B0C2947971B00D2A209 /* TrisCPUUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C17C4B0D2947971B00D2A209 /* TrisCPUUITests.swift */,
+				C17C4B0F2947971B00D2A209 /* TrisCPUUITestsLaunchTests.swift */,
+			);
+			path = TrisCPUUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C17C4AE82947971100D2A209 /* TrisCPU */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C17C4B132947971B00D2A209 /* Build configuration list for PBXNativeTarget "TrisCPU" */;
+			buildPhases = (
+				C17C4AE52947971100D2A209 /* Sources */,
+				C17C4AE62947971100D2A209 /* Frameworks */,
+				C17C4AE72947971100D2A209 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrisCPU;
+			productName = TrisCPU;
+			productReference = C17C4AE92947971100D2A209 /* TrisCPU.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C17C4AFE2947971B00D2A209 /* TrisCPUTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C17C4B162947971B00D2A209 /* Build configuration list for PBXNativeTarget "TrisCPUTests" */;
+			buildPhases = (
+				C17C4AFB2947971B00D2A209 /* Sources */,
+				C17C4AFC2947971B00D2A209 /* Frameworks */,
+				C17C4AFD2947971B00D2A209 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C17C4B012947971B00D2A209 /* PBXTargetDependency */,
+			);
+			name = TrisCPUTests;
+			productName = TrisCPUTests;
+			productReference = C17C4AFF2947971B00D2A209 /* TrisCPUTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C17C4B082947971B00D2A209 /* TrisCPUUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C17C4B192947971B00D2A209 /* Build configuration list for PBXNativeTarget "TrisCPUUITests" */;
+			buildPhases = (
+				C17C4B052947971B00D2A209 /* Sources */,
+				C17C4B062947971B00D2A209 /* Frameworks */,
+				C17C4B072947971B00D2A209 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C17C4B0B2947971B00D2A209 /* PBXTargetDependency */,
+			);
+			name = TrisCPUUITests;
+			productName = TrisCPUUITests;
+			productReference = C17C4B092947971B00D2A209 /* TrisCPUUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C17C4AE12947971100D2A209 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					C17C4AE82947971100D2A209 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					C17C4AFE2947971B00D2A209 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = C17C4AE82947971100D2A209;
+					};
+					C17C4B082947971B00D2A209 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = C17C4AE82947971100D2A209;
+					};
+				};
+			};
+			buildConfigurationList = C17C4AE42947971100D2A209 /* Build configuration list for PBXProject "TrisCPU" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C17C4AE02947971100D2A209;
+			productRefGroup = C17C4AEA2947971100D2A209 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C17C4AE82947971100D2A209 /* TrisCPU */,
+				C17C4AFE2947971B00D2A209 /* TrisCPUTests */,
+				C17C4B082947971B00D2A209 /* TrisCPUUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C17C4AE72947971100D2A209 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C17C4AF92947971A00D2A209 /* LaunchScreen.storyboard in Resources */,
+				C17C4AF62947971A00D2A209 /* Assets.xcassets in Resources */,
+				C17C4AF42947971100D2A209 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C17C4AFD2947971B00D2A209 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C17C4B072947971B00D2A209 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C17C4AE52947971100D2A209 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C17C4AF12947971100D2A209 /* ViewController.swift in Sources */,
+				C17C4AED2947971100D2A209 /* AppDelegate.swift in Sources */,
+				C17C4AEF2947971100D2A209 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C17C4AFB2947971B00D2A209 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C17C4B042947971B00D2A209 /* TrisCPUTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C17C4B052947971B00D2A209 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C17C4B0E2947971B00D2A209 /* TrisCPUUITests.swift in Sources */,
+				C17C4B102947971B00D2A209 /* TrisCPUUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C17C4B012947971B00D2A209 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C17C4AE82947971100D2A209 /* TrisCPU */;
+			targetProxy = C17C4B002947971B00D2A209 /* PBXContainerItemProxy */;
+		};
+		C17C4B0B2947971B00D2A209 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C17C4AE82947971100D2A209 /* TrisCPU */;
+			targetProxy = C17C4B0A2947971B00D2A209 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C17C4AF22947971100D2A209 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C17C4AF32947971100D2A209 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C17C4AF72947971A00D2A209 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C17C4AF82947971A00D2A209 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C17C4B112947971B00D2A209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C17C4B122947971B00D2A209 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C17C4B142947971B00D2A209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K8S3466P3R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrisCPU/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TrisCPU;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C17C4B152947971B00D2A209 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K8S3466P3R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrisCPU/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TrisCPU;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C17C4B172947971B00D2A209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K8S3466P3R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TrisCPUTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrisCPU.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TrisCPU";
+			};
+			name = Debug;
+		};
+		C17C4B182947971B00D2A209 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K8S3466P3R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TrisCPUTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrisCPU.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TrisCPU";
+			};
+			name = Release;
+		};
+		C17C4B1A2947971B00D2A209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K8S3466P3R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TrisCPUUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrisCPU;
+			};
+			name = Debug;
+		};
+		C17C4B1B2947971B00D2A209 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K8S3466P3R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TrisCPUUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrisCPU;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C17C4AE42947971100D2A209 /* Build configuration list for PBXProject "TrisCPU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C17C4B112947971B00D2A209 /* Debug */,
+				C17C4B122947971B00D2A209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C17C4B132947971B00D2A209 /* Build configuration list for PBXNativeTarget "TrisCPU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C17C4B142947971B00D2A209 /* Debug */,
+				C17C4B152947971B00D2A209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C17C4B162947971B00D2A209 /* Build configuration list for PBXNativeTarget "TrisCPUTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C17C4B172947971B00D2A209 /* Debug */,
+				C17C4B182947971B00D2A209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C17C4B192947971B00D2A209 /* Build configuration list for PBXNativeTarget "TrisCPUUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C17C4B1A2947971B00D2A209 /* Debug */,
+				C17C4B1B2947971B00D2A209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C17C4AE12947971100D2A209 /* Project object */;
+}
