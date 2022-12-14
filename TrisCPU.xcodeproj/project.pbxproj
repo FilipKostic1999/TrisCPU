@@ -16,6 +16,7 @@
 		C17C4B042947971B00D2A209 /* TrisCPUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C4B032947971B00D2A209 /* TrisCPUTests.swift */; };
 		C17C4B0E2947971B00D2A209 /* TrisCPUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C4B0D2947971B00D2A209 /* TrisCPUUITests.swift */; };
 		C17C4B102947971B00D2A209 /* TrisCPUUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C4B0F2947971B00D2A209 /* TrisCPUUITestsLaunchTests.swift */; };
+		C17C4B1D2948CC6100D2A209 /* CompTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C4B1C2948CC6100D2A209 /* CompTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C17C4B092947971B00D2A209 /* TrisCPUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrisCPUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17C4B0D2947971B00D2A209 /* TrisCPUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrisCPUUITests.swift; sourceTree = "<group>"; };
 		C17C4B0F2947971B00D2A209 /* TrisCPUUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrisCPUUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C17C4B1C2948CC6100D2A209 /* CompTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				C17C4AEE2947971100D2A209 /* SceneDelegate.swift */,
 				C17C4AF02947971100D2A209 /* ViewController.swift */,
 				C17C4AF22947971100D2A209 /* Main.storyboard */,
+				C17C4B1C2948CC6100D2A209 /* CompTableViewController.swift */,
 				C17C4AF52947971A00D2A209 /* Assets.xcassets */,
 				C17C4AF72947971A00D2A209 /* LaunchScreen.storyboard */,
 				C17C4AFA2947971A00D2A209 /* Info.plist */,
@@ -260,6 +263,7 @@
 			files = (
 				C17C4AF12947971100D2A209 /* ViewController.swift in Sources */,
 				C17C4AED2947971100D2A209 /* AppDelegate.swift in Sources */,
+				C17C4B1D2948CC6100D2A209 /* CompTableViewController.swift in Sources */,
 				C17C4AEF2947971100D2A209 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

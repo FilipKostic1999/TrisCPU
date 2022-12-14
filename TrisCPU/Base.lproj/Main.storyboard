@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -160,10 +161,154 @@
             </objects>
             <point key="canvasLocation" x="63.358778625954194" y="-2.1126760563380285"/>
         </scene>
+        <!--Comp Table View Controller-->
+        <scene sceneID="H7v-9a-rrh">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="vld-0j-Wfw" customClass="CompTableViewController" customModule="TrisCPU" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f71-6m-88M" customClass="UITableView">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grid" translatesAutoresizingMaskIntoConstraints="NO" id="Wup-rk-IRU">
+                                <rect key="frame" x="19" y="257" width="355" height="303"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRi-z0-zHf">
+                                <rect key="frame" x="71" y="286" width="74" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="A1buttonAction:" destination="vld-0j-Wfw" eventType="touchUpInside" id="FAX-ay-Qjo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIT-nN-hr8">
+                                <rect key="frame" x="160" y="290" width="72" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="A2buttonAction:" destination="vld-0j-Wfw" eventType="touchUpInside" id="rI3-n7-oxF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Miy-vq-ZJj">
+                                <rect key="frame" x="246" y="286" width="75" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="A3buttonAction:" destination="vld-0j-Wfw" eventType="touchUpInside" id="3zn-9m-SkS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EgS-tQ-2OE">
+                                <rect key="frame" x="71" y="378" width="75" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="B1buttonAction:" destination="vld-0j-Wfw" eventType="touchUpInside" id="Bb5-8K-cec"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osQ-go-fW9">
+                                <rect key="frame" x="160" y="381" width="75" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="B2buttonAction:" destination="vld-0j-Wfw" eventType="touchUpInside" id="pQb-ML-xWF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RA-oC-D3l">
+                                <rect key="frame" x="246" y="380" width="75" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="B3buttonAction:" destination="vld-0j-Wfw" eventType="touchUpInside" id="MYT-Db-HS4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWX-nq-0qV">
+                                <rect key="frame" x="71" y="457" width="75" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="C1buttonAction:" destination="vld-0j-Wfw" eventType="touchUpInside" id="1ZW-VC-Hxk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJI-z6-diL">
+                                <rect key="frame" x="163" y="462" width="75" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="C2buttonAction:" destination="vld-0j-Wfw" eventType="touchUpInside" id="Wsu-aE-VvA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XxK-ei-RlE">
+                                <rect key="frame" x="240" y="460" width="75" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="C3buttonAction:" destination="vld-0j-Wfw" eventType="touchUpInside" id="SlF-5o-lYW"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p17-y8-9HB">
+                                <rect key="frame" x="121" y="99" width="152" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rEu-62-YBI">
+                                <rect key="frame" x="19" y="622" width="213" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u0M-6F-FC5">
+                                <rect key="frame" x="12" y="664" width="220" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orO-6z-1s1">
+                                <rect key="frame" x="145" y="725" width="111" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="New match"/>
+                                <connections>
+                                    <action selector="rematchButton:" destination="vld-0j-Wfw" eventType="touchUpInside" id="d2v-PL-cxX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="w8p-g9-L12"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6ie-Ju-eiA"/>
+                    <connections>
+                        <outlet property="A1buttonOutlet" destination="YRi-z0-zHf" id="11T-qp-028"/>
+                        <outlet property="A2buttonOutlet" destination="iIT-nN-hr8" id="FpJ-Mo-vfc"/>
+                        <outlet property="A3buttonOutlet" destination="Miy-vq-ZJj" id="u9l-wE-zN2"/>
+                        <outlet property="B1buttonOutlet" destination="EgS-tQ-2OE" id="Uua-c6-bSL"/>
+                        <outlet property="B2buttonOutlet" destination="osQ-go-fW9" id="zIg-df-adB"/>
+                        <outlet property="B3buttonOutlet" destination="0RA-oC-D3l" id="m9b-Nd-ZTB"/>
+                        <outlet property="C1buttonOutlet" destination="TWX-nq-0qV" id="qAa-ls-1Tl"/>
+                        <outlet property="C2buttonOutlet" destination="EJI-z6-diL" id="YKD-SJ-oLp"/>
+                        <outlet property="C3buttonOutlet" destination="XxK-ei-RlE" id="aLe-8G-igX"/>
+                        <outlet property="anouncment" destination="p17-y8-9HB" id="0ff-Mj-anh"/>
+                        <outlet property="player1WinsCalculated" destination="rEu-62-YBI" id="PHK-X7-Jtb"/>
+                        <outlet property="player2WinsCalculated" destination="u0M-6F-FC5" id="B1k-Qz-6EQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K4c-A2-aqw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-440.45801526717554" y="724.64788732394368"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="Osd-zL-U9z">
             <objects>
-                <viewController id="Jz4-yn-vri" sceneMemberID="viewController">
+                <viewController id="Jz4-yn-vri" customClass="ViewController" customModule="TrisCPU" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r7D-EU-pOx">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -183,6 +328,17 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="YK1-BG-xa6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCR-qP-dyI">
+                                <rect key="frame" x="129" y="730" width="136" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="0.75451307229999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="challenge CPU"/>
+                                <connections>
+                                    <segue destination="vld-0j-Wfw" kind="show" id="di7-bw-hXd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SqF-f6-FO5"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
@@ -190,12 +346,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h0Q-q7-TBo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-660" y="-2"/>
+            <point key="canvasLocation" x="-660.30534351145036" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>
         <image name="MicrosoftTeams-image (1)" width="1079" height="933"/>
         <image name="grid" width="1300" height="1258"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
