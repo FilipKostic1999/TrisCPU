@@ -84,6 +84,17 @@ class CompTableViewController: UITableViewController {
     var isThisADraw : Bool = true
     
     
+    var loopA1IsActive : Bool = true
+    var loopA2IsActive : Bool = true
+    var loopA3IsActive : Bool = true
+    
+    var loopB1IsActive : Bool = true
+    var loopB2IsActive : Bool = true
+    var loopB3IsActive : Bool = true
+    
+    var loopC1IsActive : Bool = true
+    var loopC2IsActive : Bool = true
+    var loopC3IsActive : Bool = true
     
     
     
@@ -112,6 +123,21 @@ class CompTableViewController: UITableViewController {
         isButtonC1Active = true
         isButtonC2Active = true
         isButtonC3Active = true
+        
+        
+        
+        
+        loopA1IsActive = true
+        loopA2IsActive = true
+        loopA3IsActive = true
+        
+        loopB1IsActive = true
+        loopB2IsActive = true
+        loopB3IsActive = true
+        
+        loopC1IsActive = true
+        loopC2IsActive = true
+        loopC3IsActive = true
         
         
         
@@ -411,6 +437,28 @@ class CompTableViewController: UITableViewController {
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     @IBAction func A1buttonAction(_ sender: UIButton) {
         
         if (isButtonA1Active == true && isNextX == true) {
@@ -419,7 +467,6 @@ class CompTableViewController: UITableViewController {
             valueA1 = 1
             isNextX = false
             isNextO = true
-            isButtonA1Active = false
             
         } else if (isButtonA1Active == true && isNextO == true) {
             
@@ -427,7 +474,6 @@ class CompTableViewController: UITableViewController {
             valueA1 = 2
             isNextX = true
             isNextO = false
-            isButtonA1Active = false
             
         }
         
@@ -442,267 +488,268 @@ class CompTableViewController: UITableViewController {
         
         
         
-        
-    
-        
-     
-        
-        
-        while (true) {
+        if (loopA1IsActive == true) {
+            
+            loopA1IsActive = false
             
             
             
-            
-            if (isButtonA1Active == false && isButtonA2Active == false && isButtonA3Active == false && isButtonB1Active == false && isButtonB2Active == false && isButtonB3Active == false && isButtonC1Active == false && isButtonC2Active == false && isButtonC3Active == false) {
+            while (true) {
                 
-                break
+                
+                
+                
+                if (isButtonA1Active == false && isButtonA2Active == false && isButtonA3Active == false && isButtonB1Active == false && isButtonB2Active == false && isButtonB3Active == false && isButtonC1Active == false && isButtonC2Active == false && isButtonC3Active == false) {
+                    
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                
+                
+                
+                var number = Int.random(in: 1...9)
+                
+                
+                
+                if (isButtonA1Active == true && isNextX == true && number == 1) {
+                    
+                    A1buttonOutlet.setTitle("X", for: .normal)
+                    valueA1 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonA1()
+                    break
+                    
+                } else if (isButtonA1Active == true && isNextO == true && number == 1) {
+                    
+                    A1buttonOutlet.setTitle("O", for: .normal)
+                    valueA1 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonA1()
+                    break
+                    
+                }
+                
+                
+                
+                if (isButtonA2Active == true && isNextX == true && number == 2) {
+                    
+                    A2buttonOutlet.setTitle("X", for: .normal)
+                    valueA2 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonA2()
+                    break
+                    
+                } else if (isButtonA2Active == true && isNextO == true && number == 2) {
+                    
+                    A2buttonOutlet.setTitle("O", for: .normal)
+                    valueA2 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonA2()
+                    break
+                    
+                }
+                
+                
+                
+                
+                if (isButtonA3Active == true && isNextX == true && number == 3) {
+                    
+                    A3buttonOutlet.setTitle("X", for: .normal)
+                    valueA3 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonA3()
+                    break
+                    
+                } else if (isButtonA3Active == true && isNextO == true && number == 3) {
+                    
+                    A3buttonOutlet.setTitle("O", for: .normal)
+                    valueA3 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonA3()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                
+                
+                if (isButtonB1Active == true && isNextX == true && number == 4) {
+                    
+                    B1buttonOutlet.setTitle("X", for: .normal)
+                    valueB1 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonB1()
+                    break
+                    
+                } else if (isButtonB1Active == true && isNextO == true && number == 4) {
+                    
+                    B1buttonOutlet.setTitle("O", for: .normal)
+                    valueB1 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonB1()
+                    break
+                    
+                }
+                
+                
+                
+                
+                if (isButtonB2Active == true && isNextX == true && number == 5) {
+                    
+                    B2buttonOutlet.setTitle("X", for: .normal)
+                    valueB2 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonB2()
+                    break
+                    
+                } else if (isButtonB2Active == true && isNextO == true && number == 5) {
+                    
+                    B2buttonOutlet.setTitle("O", for: .normal)
+                    valueB2 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonB2()
+                    break
+                    
+                }
+                
+                
+                
+                
+                if (isButtonB3Active == true && isNextX == true && number == 6) {
+                    
+                    B3buttonOutlet.setTitle("X", for: .normal)
+                    valueB3 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonB3()
+                    break
+                    
+                } else if (isButtonB3Active == true && isNextO == true && number == 6) {
+                    
+                    B3buttonOutlet.setTitle("O", for: .normal)
+                    valueB3 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonB3()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                if (isButtonC1Active == true && isNextX == true && number == 7) {
+                    
+                    C1buttonOutlet.setTitle("X", for: .normal)
+                    valueC1 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonC1()
+                    break
+                    
+                } else if (isButtonC1Active == true && isNextO == true && number == 7) {
+                    
+                    C1buttonOutlet.setTitle("O", for: .normal)
+                    valueC1 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonC1()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                if (isButtonC2Active == true && isNextX == true && number == 8) {
+                    
+                    C2buttonOutlet.setTitle("X", for: .normal)
+                    valueC2 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonC2()
+                    break
+                    
+                } else if (isButtonC2Active == true && isNextO == true && number == 8) {
+                    
+                    C2buttonOutlet.setTitle("O", for: .normal)
+                    valueC2 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonC2()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                
+                
+                if (isButtonC3Active == true && isNextX == true && number == 9) {
+                    
+                    C3buttonOutlet.setTitle("X", for: .normal)
+                    valueC3 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonC3()
+                    break
+                    
+                } else if (isButtonC3Active == true && isNextO == true && number == 9) {
+                    
+                    C3buttonOutlet.setTitle("O", for: .normal)
+                    valueC3 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonC3()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 
             }
-            
-            
-            
-            
-          
-            
-            
-            
-            var number = Int.random(in: 1...9)
-            
-            
-            
-            if (isButtonA1Active == true && isNextX == true && number == 1) {
-                
-                A1buttonOutlet.setTitle("X", for: .normal)
-                valueA1 = 1
-                isNextX = false
-                isNextO = true
-                buttonA1()
-                break
-                
-            } else if (isButtonA1Active == true && isNextO == true && number == 1) {
-                
-                A1buttonOutlet.setTitle("O", for: .normal)
-                valueA1 = 2
-                isNextX = true
-                isNextO = false
-                buttonA1()
-                break
-                
-            }
-            
-            
-            
-            if (isButtonA2Active == true && isNextX == true && number == 2) {
-                
-                A2buttonOutlet.setTitle("X", for: .normal)
-                valueA2 = 1
-                isNextX = false
-                isNextO = true
-                buttonA2()
-                break
-                
-            } else if (isButtonA2Active == true && isNextO == true && number == 2) {
-                
-                A2buttonOutlet.setTitle("O", for: .normal)
-                valueA2 = 2
-                isNextX = true
-                isNextO = false
-                buttonA2()
-                break
-                
-            }
-            
-            
-            
-            
-            if (isButtonA3Active == true && isNextX == true && number == 3) {
-                
-                A3buttonOutlet.setTitle("X", for: .normal)
-                valueA3 = 1
-                isNextX = false
-                isNextO = true
-                buttonA3()
-                break
-                
-            } else if (isButtonA3Active == true && isNextO == true && number == 3) {
-                
-                A3buttonOutlet.setTitle("O", for: .normal)
-                valueA3 = 2
-                isNextX = true
-                isNextO = false
-                buttonA3()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            
-            
-            if (isButtonB1Active == true && isNextX == true && number == 4) {
-                
-                B1buttonOutlet.setTitle("X", for: .normal)
-                valueB1 = 1
-                isNextX = false
-                isNextO = true
-                buttonB1()
-                break
-                
-            } else if (isButtonB1Active == true && isNextO == true && number == 4) {
-                
-                B1buttonOutlet.setTitle("O", for: .normal)
-                valueB1 = 2
-                isNextX = true
-                isNextO = false
-                buttonB1()
-                break
-                
-            }
-            
-            
-            
-            
-            if (isButtonB2Active == true && isNextX == true && number == 5) {
-                
-                B2buttonOutlet.setTitle("X", for: .normal)
-                valueB2 = 1
-                isNextX = false
-                isNextO = true
-                buttonB2()
-                break
-                
-            } else if (isButtonB2Active == true && isNextO == true && number == 5) {
-                
-                B2buttonOutlet.setTitle("O", for: .normal)
-                valueB2 = 2
-                isNextX = true
-                isNextO = false
-                buttonB2()
-                break
-                
-            }
-            
-            
-            
-            
-            if (isButtonB3Active == true && isNextX == true && number == 6) {
-                
-                B3buttonOutlet.setTitle("X", for: .normal)
-                valueB3 = 1
-                isNextX = false
-                isNextO = true
-                buttonB3()
-                break
-                
-            } else if (isButtonB3Active == true && isNextO == true && number == 6) {
-                
-                B3buttonOutlet.setTitle("O", for: .normal)
-                valueB3 = 2
-                isNextX = true
-                isNextO = false
-                buttonB3()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            if (isButtonC1Active == true && isNextX == true && number == 7) {
-                
-                C1buttonOutlet.setTitle("X", for: .normal)
-                valueC1 = 1
-                isNextX = false
-                isNextO = true
-                buttonC1()
-                break
-                
-            } else if (isButtonC1Active == true && isNextO == true && number == 7) {
-                
-                C1buttonOutlet.setTitle("O", for: .normal)
-                valueC1 = 2
-                isNextX = true
-                isNextO = false
-                buttonC1()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            if (isButtonC2Active == true && isNextX == true && number == 8) {
-                
-                C2buttonOutlet.setTitle("X", for: .normal)
-                valueC2 = 1
-                isNextX = false
-                isNextO = true
-                buttonC2()
-                break
-                
-            } else if (isButtonC2Active == true && isNextO == true && number == 8) {
-                
-                C2buttonOutlet.setTitle("O", for: .normal)
-                valueC2 = 2
-                isNextX = true
-                isNextO = false
-                buttonC2()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            
-            
-            if (isButtonC3Active == true && isNextX == true && number == 9) {
-                
-                C3buttonOutlet.setTitle("X", for: .normal)
-                valueC3 = 1
-                isNextX = false
-                isNextO = true
-                buttonC3()
-                break
-                
-            } else if (isButtonC3Active == true && isNextO == true && number == 9) {
-                
-                C3buttonOutlet.setTitle("O", for: .normal)
-                valueC3 = 2
-                isNextX = true
-                isNextO = false
-                buttonC3()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-          
-            
-            
             
         }
-        
         
         
         
@@ -727,7 +774,6 @@ class CompTableViewController: UITableViewController {
             valueA2 = 1
             isNextX = false
             isNextO = true
-            isButtonA2Active = false
             
         } else if (isButtonA2Active == true && isNextO == true) {
             
@@ -735,7 +781,6 @@ class CompTableViewController: UITableViewController {
             valueA2 = 2
             isNextX = true
             isNextO = false
-            isButtonA2Active = false
             
         }
         
@@ -751,257 +796,260 @@ class CompTableViewController: UITableViewController {
         
         
         
-    
-        
-     
-        
-        
-        while (true) {
+        if (loopA2IsActive == true) {
             
             
-            if (isButtonA1Active == false && isButtonA2Active == false && isButtonA3Active == false && isButtonB1Active == false && isButtonB2Active == false && isButtonB3Active == false && isButtonC1Active == false && isButtonC2Active == false && isButtonC3Active == false) {
+            loopA2IsActive = false
+            
+            
+            while (true) {
                 
-                break
+                
+                if (isButtonA1Active == false && isButtonA2Active == false && isButtonA3Active == false && isButtonB1Active == false && isButtonB2Active == false && isButtonB3Active == false && isButtonC1Active == false && isButtonC2Active == false && isButtonC3Active == false) {
+                    
+                    break
+                    
+                }
+                
+                
+                
+                
+                var number = Int.random(in: 1...9)
+                
+                
+                
+                if (isButtonA1Active == true && isNextX == true && number == 1) {
+                    
+                    A1buttonOutlet.setTitle("X", for: .normal)
+                    valueA1 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonA1()
+                    break
+                    
+                } else if (isButtonA1Active == true && isNextO == true && number == 1) {
+                    
+                    A1buttonOutlet.setTitle("O", for: .normal)
+                    valueA1 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonA1()
+                    break
+                    
+                }
+                
+                
+                
+                if (isButtonA2Active == true && isNextX == true && number == 2) {
+                    
+                    A2buttonOutlet.setTitle("X", for: .normal)
+                    valueA2 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonA2()
+                    break
+                    
+                } else if (isButtonA2Active == true && isNextO == true && number == 2) {
+                    
+                    A2buttonOutlet.setTitle("O", for: .normal)
+                    valueA2 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonA2()
+                    break
+                    
+                }
+                
+                
+                
+                
+                if (isButtonA3Active == true && isNextX == true && number == 3) {
+                    
+                    A3buttonOutlet.setTitle("X", for: .normal)
+                    valueA3 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonA3()
+                    break
+                    
+                } else if (isButtonA3Active == true && isNextO == true && number == 3) {
+                    
+                    A3buttonOutlet.setTitle("O", for: .normal)
+                    valueA3 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonA3()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                
+                
+                if (isButtonB1Active == true && isNextX == true && number == 4) {
+                    
+                    B1buttonOutlet.setTitle("X", for: .normal)
+                    valueB1 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonB1()
+                    break
+                    
+                } else if (isButtonB1Active == true && isNextO == true && number == 4) {
+                    
+                    B1buttonOutlet.setTitle("O", for: .normal)
+                    valueB1 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonB1()
+                    break
+                    
+                }
+                
+                
+                
+                
+                if (isButtonB2Active == true && isNextX == true && number == 5) {
+                    
+                    B2buttonOutlet.setTitle("X", for: .normal)
+                    valueB2 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonB2()
+                    break
+                    
+                } else if (isButtonB2Active == true && isNextO == true && number == 5) {
+                    
+                    B2buttonOutlet.setTitle("O", for: .normal)
+                    valueB2 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonB2()
+                    break
+                    
+                }
+                
+                
+                
+                
+                if (isButtonB3Active == true && isNextX == true && number == 6) {
+                    
+                    B3buttonOutlet.setTitle("X", for: .normal)
+                    valueB3 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonB3()
+                    break
+                    
+                } else if (isButtonB3Active == true && isNextO == true && number == 6) {
+                    
+                    B3buttonOutlet.setTitle("O", for: .normal)
+                    valueB3 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonB3()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                if (isButtonC1Active == true && isNextX == true && number == 7) {
+                    
+                    C1buttonOutlet.setTitle("X", for: .normal)
+                    valueC1 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonC1()
+                    break
+                    
+                } else if (isButtonC1Active == true && isNextO == true && number == 7) {
+                    
+                    C1buttonOutlet.setTitle("O", for: .normal)
+                    valueC1 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonC1()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                if (isButtonC2Active == true && isNextX == true && number == 8) {
+                    
+                    C2buttonOutlet.setTitle("X", for: .normal)
+                    valueC2 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonC2()
+                    break
+                    
+                } else if (isButtonC2Active == true && isNextO == true && number == 8) {
+                    
+                    C2buttonOutlet.setTitle("O", for: .normal)
+                    valueC2 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonC2()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                
+                
+                if (isButtonC3Active == true && isNextX == true && number == 9) {
+                    
+                    C3buttonOutlet.setTitle("X", for: .normal)
+                    valueC3 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonC3()
+                    break
+                    
+                } else if (isButtonC3Active == true && isNextO == true && number == 9) {
+                    
+                    C3buttonOutlet.setTitle("O", for: .normal)
+                    valueC3 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonC3()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 
             }
-            
-            
-            
-            
-            var number = Int.random(in: 1...9)
-            
-            
-            
-            if (isButtonA1Active == true && isNextX == true && number == 1) {
-                
-                A1buttonOutlet.setTitle("X", for: .normal)
-                valueA1 = 1
-                isNextX = false
-                isNextO = true
-                buttonA1()
-                break
-                
-            } else if (isButtonA1Active == true && isNextO == true && number == 1) {
-                
-                A1buttonOutlet.setTitle("O", for: .normal)
-                valueA1 = 2
-                isNextX = true
-                isNextO = false
-                buttonA1()
-                break
-                
-            }
-            
-            
-            
-            if (isButtonA2Active == true && isNextX == true && number == 2) {
-                
-                A2buttonOutlet.setTitle("X", for: .normal)
-                valueA2 = 1
-                isNextX = false
-                isNextO = true
-                buttonA2()
-                break
-                
-            } else if (isButtonA2Active == true && isNextO == true && number == 2) {
-                
-                A2buttonOutlet.setTitle("O", for: .normal)
-                valueA2 = 2
-                isNextX = true
-                isNextO = false
-                buttonA2()
-                break
-                
-            }
-            
-            
-            
-            
-            if (isButtonA3Active == true && isNextX == true && number == 3) {
-                
-                A3buttonOutlet.setTitle("X", for: .normal)
-                valueA3 = 1
-                isNextX = false
-                isNextO = true
-                buttonA3()
-                break
-                
-            } else if (isButtonA3Active == true && isNextO == true && number == 3) {
-                
-                A3buttonOutlet.setTitle("O", for: .normal)
-                valueA3 = 2
-                isNextX = true
-                isNextO = false
-                buttonA3()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            
-            
-            if (isButtonB1Active == true && isNextX == true && number == 4) {
-                
-                B1buttonOutlet.setTitle("X", for: .normal)
-                valueB1 = 1
-                isNextX = false
-                isNextO = true
-                buttonB1()
-                break
-                
-            } else if (isButtonB1Active == true && isNextO == true && number == 4) {
-                
-                B1buttonOutlet.setTitle("O", for: .normal)
-                valueB1 = 2
-                isNextX = true
-                isNextO = false
-                buttonB1()
-                break
-                
-            }
-            
-            
-            
-            
-            if (isButtonB2Active == true && isNextX == true && number == 5) {
-                
-                B2buttonOutlet.setTitle("X", for: .normal)
-                valueB2 = 1
-                isNextX = false
-                isNextO = true
-                buttonB2()
-                break
-                
-            } else if (isButtonB2Active == true && isNextO == true && number == 5) {
-                
-                B2buttonOutlet.setTitle("O", for: .normal)
-                valueB2 = 2
-                isNextX = true
-                isNextO = false
-                buttonB2()
-                break
-                
-            }
-            
-            
-            
-            
-            if (isButtonB3Active == true && isNextX == true && number == 6) {
-                
-                B3buttonOutlet.setTitle("X", for: .normal)
-                valueB3 = 1
-                isNextX = false
-                isNextO = true
-                buttonB3()
-                break
-                
-            } else if (isButtonB3Active == true && isNextO == true && number == 6) {
-                
-                B3buttonOutlet.setTitle("O", for: .normal)
-                valueB3 = 2
-                isNextX = true
-                isNextO = false
-                buttonB3()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            if (isButtonC1Active == true && isNextX == true && number == 7) {
-                
-                C1buttonOutlet.setTitle("X", for: .normal)
-                valueC1 = 1
-                isNextX = false
-                isNextO = true
-                buttonC1()
-                break
-                
-            } else if (isButtonC1Active == true && isNextO == true && number == 7) {
-                
-                C1buttonOutlet.setTitle("O", for: .normal)
-                valueC1 = 2
-                isNextX = true
-                isNextO = false
-                buttonC1()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            if (isButtonC2Active == true && isNextX == true && number == 8) {
-                
-                C2buttonOutlet.setTitle("X", for: .normal)
-                valueC2 = 1
-                isNextX = false
-                isNextO = true
-                buttonC2()
-                break
-                
-            } else if (isButtonC2Active == true && isNextO == true && number == 8) {
-                
-                C2buttonOutlet.setTitle("O", for: .normal)
-                valueC2 = 2
-                isNextX = true
-                isNextO = false
-                buttonC2()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            
-            
-            if (isButtonC3Active == true && isNextX == true && number == 9) {
-                
-                C3buttonOutlet.setTitle("X", for: .normal)
-                valueC3 = 1
-                isNextX = false
-                isNextO = true
-                buttonC3()
-                break
-                
-            } else if (isButtonC3Active == true && isNextO == true && number == 9) {
-                
-                C3buttonOutlet.setTitle("O", for: .normal)
-                valueC3 = 2
-                isNextX = true
-                isNextO = false
-                buttonC3()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-          
-            
-            
             
         }
         
@@ -1026,7 +1074,6 @@ class CompTableViewController: UITableViewController {
             valueA3 = 1
             isNextX = false
             isNextO = true
-            isButtonA3Active = false
             
         } else if (isButtonA3Active == true && isNextO == true) {
             
@@ -1034,7 +1081,6 @@ class CompTableViewController: UITableViewController {
             valueA3 = 2
             isNextX = true
             isNextO = false
-            isButtonA3Active = false
             
         }
         
@@ -1051,264 +1097,264 @@ class CompTableViewController: UITableViewController {
         
         
     
-        
-     
-        
-        
-        while (true) {
+        if (loopA3IsActive == true) {
             
+            loopA3IsActive = false
             
-            
-            
-            
-            if (isButtonA1Active == false && isButtonA2Active == false && isButtonA3Active == false && isButtonB1Active == false && isButtonB2Active == false && isButtonB3Active == false && isButtonC1Active == false && isButtonC2Active == false && isButtonC3Active == false) {
+            while (true) {
                 
-                break
+                
+                
+                
+                
+                if (isButtonA1Active == false && isButtonA2Active == false && isButtonA3Active == false && isButtonB1Active == false && isButtonB2Active == false && isButtonB3Active == false && isButtonC1Active == false && isButtonC2Active == false && isButtonC3Active == false) {
+                    
+                    break
+                    
+                }
+                
+                
+                
+                
+                var number = Int.random(in: 1...9)
+                
+                
+                
+                if (isButtonA1Active == true && isNextX == true && number == 1) {
+                    
+                    A1buttonOutlet.setTitle("X", for: .normal)
+                    valueA1 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonA1()
+                    break
+                    
+                } else if (isButtonA1Active == true && isNextO == true && number == 1) {
+                    
+                    A1buttonOutlet.setTitle("O", for: .normal)
+                    valueA1 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonA1()
+                    break
+                    
+                }
+                
+                
+                
+                if (isButtonA2Active == true && isNextX == true && number == 2) {
+                    
+                    A2buttonOutlet.setTitle("X", for: .normal)
+                    valueA2 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonA2()
+                    break
+                    
+                } else if (isButtonA2Active == true && isNextO == true && number == 2) {
+                    
+                    A2buttonOutlet.setTitle("O", for: .normal)
+                    valueA2 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonA2()
+                    break
+                    
+                }
+                
+                
+                
+                
+                if (isButtonA3Active == true && isNextX == true && number == 3) {
+                    
+                    A3buttonOutlet.setTitle("X", for: .normal)
+                    valueA3 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonA3()
+                    break
+                    
+                } else if (isButtonA3Active == true && isNextO == true && number == 3) {
+                    
+                    A3buttonOutlet.setTitle("O", for: .normal)
+                    valueA3 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonA3()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                
+                
+                if (isButtonB1Active == true && isNextX == true && number == 4) {
+                    
+                    B1buttonOutlet.setTitle("X", for: .normal)
+                    valueB1 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonB1()
+                    break
+                    
+                } else if (isButtonB1Active == true && isNextO == true && number == 4) {
+                    
+                    B1buttonOutlet.setTitle("O", for: .normal)
+                    valueB1 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonB1()
+                    break
+                    
+                }
+                
+                
+                
+                
+                if (isButtonB2Active == true && isNextX == true && number == 5) {
+                    
+                    B2buttonOutlet.setTitle("X", for: .normal)
+                    valueB2 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonB2()
+                    break
+                    
+                } else if (isButtonB2Active == true && isNextO == true && number == 5) {
+                    
+                    B2buttonOutlet.setTitle("O", for: .normal)
+                    valueB2 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonB2()
+                    break
+                    
+                }
+                
+                
+                
+                
+                if (isButtonB3Active == true && isNextX == true && number == 6) {
+                    
+                    B3buttonOutlet.setTitle("X", for: .normal)
+                    valueB3 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonB3()
+                    break
+                    
+                } else if (isButtonB3Active == true && isNextO == true && number == 6) {
+                    
+                    B3buttonOutlet.setTitle("O", for: .normal)
+                    valueB3 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonB3()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                if (isButtonC1Active == true && isNextX == true && number == 7) {
+                    
+                    C1buttonOutlet.setTitle("X", for: .normal)
+                    valueC1 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonC1()
+                    break
+                    
+                } else if (isButtonC1Active == true && isNextO == true && number == 7) {
+                    
+                    C1buttonOutlet.setTitle("O", for: .normal)
+                    valueC1 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonC1()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                if (isButtonC2Active == true && isNextX == true && number == 8) {
+                    
+                    C2buttonOutlet.setTitle("X", for: .normal)
+                    valueC2 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonC2()
+                    break
+                    
+                } else if (isButtonC2Active == true && isNextO == true && number == 8) {
+                    
+                    C2buttonOutlet.setTitle("O", for: .normal)
+                    valueC2 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonC2()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                
+                
+                if (isButtonC3Active == true && isNextX == true && number == 9) {
+                    
+                    C3buttonOutlet.setTitle("X", for: .normal)
+                    valueC3 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonC3()
+                    break
+                    
+                } else if (isButtonC3Active == true && isNextO == true && number == 9) {
+                    
+                    C3buttonOutlet.setTitle("O", for: .normal)
+                    valueC3 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonC3()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 
             }
-            
-            
-            
-            
-            var number = Int.random(in: 1...9)
-            
-            
-            
-            if (isButtonA1Active == true && isNextX == true && number == 1) {
-                
-                A1buttonOutlet.setTitle("X", for: .normal)
-                valueA1 = 1
-                isNextX = false
-                isNextO = true
-                buttonA1()
-                break
-                
-            } else if (isButtonA1Active == true && isNextO == true && number == 1) {
-                
-                A1buttonOutlet.setTitle("O", for: .normal)
-                valueA1 = 2
-                isNextX = true
-                isNextO = false
-                buttonA1()
-                break
-                
-            }
-            
-            
-            
-            if (isButtonA2Active == true && isNextX == true && number == 2) {
-                
-                A2buttonOutlet.setTitle("X", for: .normal)
-                valueA2 = 1
-                isNextX = false
-                isNextO = true
-                buttonA2()
-                break
-                
-            } else if (isButtonA2Active == true && isNextO == true && number == 2) {
-                
-                A2buttonOutlet.setTitle("O", for: .normal)
-                valueA2 = 2
-                isNextX = true
-                isNextO = false
-                buttonA2()
-                break
-                
-            }
-            
-            
-            
-            
-            if (isButtonA3Active == true && isNextX == true && number == 3) {
-                
-                A3buttonOutlet.setTitle("X", for: .normal)
-                valueA3 = 1
-                isNextX = false
-                isNextO = true
-                buttonA3()
-                break
-                
-            } else if (isButtonA3Active == true && isNextO == true && number == 3) {
-                
-                A3buttonOutlet.setTitle("O", for: .normal)
-                valueA3 = 2
-                isNextX = true
-                isNextO = false
-                buttonA3()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            
-            
-            if (isButtonB1Active == true && isNextX == true && number == 4) {
-                
-                B1buttonOutlet.setTitle("X", for: .normal)
-                valueB1 = 1
-                isNextX = false
-                isNextO = true
-                buttonB1()
-                break
-                
-            } else if (isButtonB1Active == true && isNextO == true && number == 4) {
-                
-                B1buttonOutlet.setTitle("O", for: .normal)
-                valueB1 = 2
-                isNextX = true
-                isNextO = false
-                buttonB1()
-                break
-                
-            }
-            
-            
-            
-            
-            if (isButtonB2Active == true && isNextX == true && number == 5) {
-                
-                B2buttonOutlet.setTitle("X", for: .normal)
-                valueB2 = 1
-                isNextX = false
-                isNextO = true
-                buttonB2()
-                break
-                
-            } else if (isButtonB2Active == true && isNextO == true && number == 5) {
-                
-                B2buttonOutlet.setTitle("O", for: .normal)
-                valueB2 = 2
-                isNextX = true
-                isNextO = false
-                buttonB2()
-                break
-                
-            }
-            
-            
-            
-            
-            if (isButtonB3Active == true && isNextX == true && number == 6) {
-                
-                B3buttonOutlet.setTitle("X", for: .normal)
-                valueB3 = 1
-                isNextX = false
-                isNextO = true
-                buttonB3()
-                break
-                
-            } else if (isButtonB3Active == true && isNextO == true && number == 6) {
-                
-                B3buttonOutlet.setTitle("O", for: .normal)
-                valueB3 = 2
-                isNextX = true
-                isNextO = false
-                buttonB3()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            if (isButtonC1Active == true && isNextX == true && number == 7) {
-                
-                C1buttonOutlet.setTitle("X", for: .normal)
-                valueC1 = 1
-                isNextX = false
-                isNextO = true
-                buttonC1()
-                break
-                
-            } else if (isButtonC1Active == true && isNextO == true && number == 7) {
-                
-                C1buttonOutlet.setTitle("O", for: .normal)
-                valueC1 = 2
-                isNextX = true
-                isNextO = false
-                buttonC1()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            if (isButtonC2Active == true && isNextX == true && number == 8) {
-                
-                C2buttonOutlet.setTitle("X", for: .normal)
-                valueC2 = 1
-                isNextX = false
-                isNextO = true
-                buttonC2()
-                break
-                
-            } else if (isButtonC2Active == true && isNextO == true && number == 8) {
-                
-                C2buttonOutlet.setTitle("O", for: .normal)
-                valueC2 = 2
-                isNextX = true
-                isNextO = false
-                buttonC2()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            
-            
-            if (isButtonC3Active == true && isNextX == true && number == 9) {
-                
-                C3buttonOutlet.setTitle("X", for: .normal)
-                valueC3 = 1
-                isNextX = false
-                isNextO = true
-                buttonC3()
-                break
-                
-            } else if (isButtonC3Active == true && isNextO == true && number == 9) {
-                
-                C3buttonOutlet.setTitle("O", for: .normal)
-                valueC3 = 2
-                isNextX = true
-                isNextO = false
-                buttonC3()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-          
-            
             
             
         }
-        
-        
-        
         
         
         
@@ -1328,7 +1374,6 @@ class CompTableViewController: UITableViewController {
             valueB1 = 1
             isNextX = false
             isNextO = true
-            isButtonB1Active = false
             
         } else if (isButtonB1Active == true && isNextO == true) {
             
@@ -1336,7 +1381,6 @@ class CompTableViewController: UITableViewController {
             valueB1 = 2
             isNextX = true
             isNextO = false
-            isButtonB1Active = false
             
         }
         
@@ -1353,260 +1397,264 @@ class CompTableViewController: UITableViewController {
         
         
     
-        
-     
-        
-        
-        while (true) {
+        if (loopB1IsActive == true) {
             
+            loopB1IsActive = false
             
-            
-            
-            
-            
-            
-            
-            if (isButtonA1Active == false && isButtonA2Active == false && isButtonA3Active == false && isButtonB1Active == false && isButtonB2Active == false && isButtonB3Active == false && isButtonC1Active == false && isButtonC2Active == false && isButtonC3Active == false) {
+            while (true) {
                 
-                break
+                
+                
+                
+                
+                
+                
+                
+                if (isButtonA1Active == false && isButtonA2Active == false && isButtonA3Active == false && isButtonB1Active == false && isButtonB2Active == false && isButtonB3Active == false && isButtonC1Active == false && isButtonC2Active == false && isButtonC3Active == false) {
+                    
+                    break
+                    
+                }
+                
+                
+                
+                
+                var number = Int.random(in: 1...9)
+                
+                
+                
+                if (isButtonA1Active == true && isNextX == true && number == 1) {
+                    
+                    A1buttonOutlet.setTitle("X", for: .normal)
+                    valueA1 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonA1()
+                    break
+                    
+                } else if (isButtonA1Active == true && isNextO == true && number == 1) {
+                    
+                    A1buttonOutlet.setTitle("O", for: .normal)
+                    valueA1 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonA1()
+                    break
+                    
+                }
+                
+                
+                
+                if (isButtonA2Active == true && isNextX == true && number == 2) {
+                    
+                    A2buttonOutlet.setTitle("X", for: .normal)
+                    valueA2 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonA2()
+                    break
+                    
+                } else if (isButtonA2Active == true && isNextO == true && number == 2) {
+                    
+                    A2buttonOutlet.setTitle("O", for: .normal)
+                    valueA2 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonA2()
+                    break
+                    
+                }
+                
+                
+                
+                
+                if (isButtonA3Active == true && isNextX == true && number == 3) {
+                    
+                    A3buttonOutlet.setTitle("X", for: .normal)
+                    valueA3 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonA3()
+                    break
+                    
+                } else if (isButtonA3Active == true && isNextO == true && number == 3) {
+                    
+                    A3buttonOutlet.setTitle("O", for: .normal)
+                    valueA3 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonA3()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                
+                
+                if (isButtonB1Active == true && isNextX == true && number == 4) {
+                    
+                    B1buttonOutlet.setTitle("X", for: .normal)
+                    valueB1 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonB1()
+                    break
+                    
+                } else if (isButtonB1Active == true && isNextO == true && number == 4) {
+                    
+                    B1buttonOutlet.setTitle("O", for: .normal)
+                    valueB1 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonB1()
+                    break
+                    
+                }
+                
+                
+                
+                
+                if (isButtonB2Active == true && isNextX == true && number == 5) {
+                    
+                    B2buttonOutlet.setTitle("X", for: .normal)
+                    valueB2 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonB2()
+                    break
+                    
+                } else if (isButtonB2Active == true && isNextO == true && number == 5) {
+                    
+                    B2buttonOutlet.setTitle("O", for: .normal)
+                    valueB2 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonB2()
+                    break
+                    
+                }
+                
+                
+                
+                
+                if (isButtonB3Active == true && isNextX == true && number == 6) {
+                    
+                    B3buttonOutlet.setTitle("X", for: .normal)
+                    valueB3 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonB3()
+                    break
+                    
+                } else if (isButtonB3Active == true && isNextO == true && number == 6) {
+                    
+                    B3buttonOutlet.setTitle("O", for: .normal)
+                    valueB3 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonB3()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                if (isButtonC1Active == true && isNextX == true && number == 7) {
+                    
+                    C1buttonOutlet.setTitle("X", for: .normal)
+                    valueC1 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonC1()
+                    break
+                    
+                } else if (isButtonC1Active == true && isNextO == true && number == 7) {
+                    
+                    C1buttonOutlet.setTitle("O", for: .normal)
+                    valueC1 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonC1()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                if (isButtonC2Active == true && isNextX == true && number == 8) {
+                    
+                    C2buttonOutlet.setTitle("X", for: .normal)
+                    valueC2 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonC2()
+                    break
+                    
+                } else if (isButtonC2Active == true && isNextO == true && number == 8) {
+                    
+                    C2buttonOutlet.setTitle("O", for: .normal)
+                    valueC2 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonC2()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                
+                
+                if (isButtonC3Active == true && isNextX == true && number == 9) {
+                    
+                    C3buttonOutlet.setTitle("X", for: .normal)
+                    valueC3 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonC3()
+                    break
+                    
+                } else if (isButtonC3Active == true && isNextO == true && number == 9) {
+                    
+                    C3buttonOutlet.setTitle("O", for: .normal)
+                    valueC3 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonC3()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 
             }
-            
-            
-            
-            
-            var number = Int.random(in: 1...9)
-            
-            
-            
-            if (isButtonA1Active == true && isNextX == true && number == 1) {
-                
-                A1buttonOutlet.setTitle("X", for: .normal)
-                valueA1 = 1
-                isNextX = false
-                isNextO = true
-                buttonA1()
-                break
-                
-            } else if (isButtonA1Active == true && isNextO == true && number == 1) {
-                
-                A1buttonOutlet.setTitle("O", for: .normal)
-                valueA1 = 2
-                isNextX = true
-                isNextO = false
-                buttonA1()
-                break
-                
-            }
-            
-            
-            
-            if (isButtonA2Active == true && isNextX == true && number == 2) {
-                
-                A2buttonOutlet.setTitle("X", for: .normal)
-                valueA2 = 1
-                isNextX = false
-                isNextO = true
-                buttonA2()
-                break
-                
-            } else if (isButtonA2Active == true && isNextO == true && number == 2) {
-                
-                A2buttonOutlet.setTitle("O", for: .normal)
-                valueA2 = 2
-                isNextX = true
-                isNextO = false
-                buttonA2()
-                break
-                
-            }
-            
-            
-            
-            
-            if (isButtonA3Active == true && isNextX == true && number == 3) {
-                
-                A3buttonOutlet.setTitle("X", for: .normal)
-                valueA3 = 1
-                isNextX = false
-                isNextO = true
-                buttonA3()
-                break
-                
-            } else if (isButtonA3Active == true && isNextO == true && number == 3) {
-                
-                A3buttonOutlet.setTitle("O", for: .normal)
-                valueA3 = 2
-                isNextX = true
-                isNextO = false
-                buttonA3()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            
-            
-            if (isButtonB1Active == true && isNextX == true && number == 4) {
-                
-                B1buttonOutlet.setTitle("X", for: .normal)
-                valueB1 = 1
-                isNextX = false
-                isNextO = true
-                buttonB1()
-                break
-                
-            } else if (isButtonB1Active == true && isNextO == true && number == 4) {
-                
-                B1buttonOutlet.setTitle("O", for: .normal)
-                valueB1 = 2
-                isNextX = true
-                isNextO = false
-                buttonB1()
-                break
-                
-            }
-            
-            
-            
-            
-            if (isButtonB2Active == true && isNextX == true && number == 5) {
-                
-                B2buttonOutlet.setTitle("X", for: .normal)
-                valueB2 = 1
-                isNextX = false
-                isNextO = true
-                buttonB2()
-                break
-                
-            } else if (isButtonB2Active == true && isNextO == true && number == 5) {
-                
-                B2buttonOutlet.setTitle("O", for: .normal)
-                valueB2 = 2
-                isNextX = true
-                isNextO = false
-                buttonB2()
-                break
-                
-            }
-            
-            
-            
-            
-            if (isButtonB3Active == true && isNextX == true && number == 6) {
-                
-                B3buttonOutlet.setTitle("X", for: .normal)
-                valueB3 = 1
-                isNextX = false
-                isNextO = true
-                buttonB3()
-                break
-                
-            } else if (isButtonB3Active == true && isNextO == true && number == 6) {
-                
-                B3buttonOutlet.setTitle("O", for: .normal)
-                valueB3 = 2
-                isNextX = true
-                isNextO = false
-                buttonB3()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            if (isButtonC1Active == true && isNextX == true && number == 7) {
-                
-                C1buttonOutlet.setTitle("X", for: .normal)
-                valueC1 = 1
-                isNextX = false
-                isNextO = true
-                buttonC1()
-                break
-                
-            } else if (isButtonC1Active == true && isNextO == true && number == 7) {
-                
-                C1buttonOutlet.setTitle("O", for: .normal)
-                valueC1 = 2
-                isNextX = true
-                isNextO = false
-                buttonC1()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            if (isButtonC2Active == true && isNextX == true && number == 8) {
-                
-                C2buttonOutlet.setTitle("X", for: .normal)
-                valueC2 = 1
-                isNextX = false
-                isNextO = true
-                buttonC2()
-                break
-                
-            } else if (isButtonC2Active == true && isNextO == true && number == 8) {
-                
-                C2buttonOutlet.setTitle("O", for: .normal)
-                valueC2 = 2
-                isNextX = true
-                isNextO = false
-                buttonC2()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            
-            
-            if (isButtonC3Active == true && isNextX == true && number == 9) {
-                
-                C3buttonOutlet.setTitle("X", for: .normal)
-                valueC3 = 1
-                isNextX = false
-                isNextO = true
-                buttonC3()
-                break
-                
-            } else if (isButtonC3Active == true && isNextO == true && number == 9) {
-                
-                C3buttonOutlet.setTitle("O", for: .normal)
-                valueC3 = 2
-                isNextX = true
-                isNextO = false
-                buttonC3()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-          
             
             
             
@@ -1632,7 +1680,6 @@ class CompTableViewController: UITableViewController {
             valueB2 = 1
             isNextX = false
             isNextO = true
-            isButtonB2Active = false
             
         } else if (isButtonB2Active == true && isNextO == true) {
             
@@ -1640,7 +1687,6 @@ class CompTableViewController: UITableViewController {
             valueB2 = 2
             isNextX = true
             isNextO = false
-            isButtonB2Active = false
             
         }
         
@@ -1649,19 +1695,19 @@ class CompTableViewController: UITableViewController {
         
         
         
-      buttonB2()
+        buttonB2()
         
         
         
         
         
         
-    
-        
-     
-        
-        
-        while (true) {
+        if (loopB2IsActive == true) {
+            
+            loopB2IsActive = false
+            
+            
+            while (true) {
             
             
             
@@ -1908,11 +1954,14 @@ class CompTableViewController: UITableViewController {
             
             
             
-          
+            
             
             
             
         }
+        
+        
+    }
         
         
         
@@ -1933,7 +1982,6 @@ class CompTableViewController: UITableViewController {
             valueB3 = 1
             isNextX = false
             isNextO = true
-            isButtonB3Active = false
             
         } else if (isButtonB3Active == true && isNextO == true) {
             
@@ -1941,7 +1989,6 @@ class CompTableViewController: UITableViewController {
             valueB3 = 2
             isNextX = true
             isNextO = false
-            isButtonB3Active = false
             
         }
         
@@ -1958,258 +2005,263 @@ class CompTableViewController: UITableViewController {
         
         
     
-        
-     
-        
-        
-        while (true) {
+        if (loopB3IsActive == true) {
+            
+            loopB3IsActive = false
             
             
             
-            
-            
-            if (isButtonA1Active == false && isButtonA2Active == false && isButtonA3Active == false && isButtonB1Active == false && isButtonB2Active == false && isButtonB3Active == false && isButtonC1Active == false && isButtonC2Active == false && isButtonC3Active == false) {
+            while (true) {
                 
-                break
+                
+                
+                
+                
+                if (isButtonA1Active == false && isButtonA2Active == false && isButtonA3Active == false && isButtonB1Active == false && isButtonB2Active == false && isButtonB3Active == false && isButtonC1Active == false && isButtonC2Active == false && isButtonC3Active == false) {
+                    
+                    break
+                    
+                }
+                
+                
+                
+                
+                var number = Int.random(in: 1...9)
+                
+                
+                
+                if (isButtonA1Active == true && isNextX == true && number == 1) {
+                    
+                    A1buttonOutlet.setTitle("X", for: .normal)
+                    valueA1 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonA1()
+                    break
+                    
+                } else if (isButtonA1Active == true && isNextO == true && number == 1) {
+                    
+                    A1buttonOutlet.setTitle("O", for: .normal)
+                    valueA1 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonA1()
+                    break
+                    
+                }
+                
+                
+                
+                if (isButtonA2Active == true && isNextX == true && number == 2) {
+                    
+                    A2buttonOutlet.setTitle("X", for: .normal)
+                    valueA2 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonA2()
+                    break
+                    
+                } else if (isButtonA2Active == true && isNextO == true && number == 2) {
+                    
+                    A2buttonOutlet.setTitle("O", for: .normal)
+                    valueA2 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonA2()
+                    break
+                    
+                }
+                
+                
+                
+                
+                if (isButtonA3Active == true && isNextX == true && number == 3) {
+                    
+                    A3buttonOutlet.setTitle("X", for: .normal)
+                    valueA3 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonA3()
+                    break
+                    
+                } else if (isButtonA3Active == true && isNextO == true && number == 3) {
+                    
+                    A3buttonOutlet.setTitle("O", for: .normal)
+                    valueA3 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonA3()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                
+                
+                if (isButtonB1Active == true && isNextX == true && number == 4) {
+                    
+                    B1buttonOutlet.setTitle("X", for: .normal)
+                    valueB1 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonB1()
+                    break
+                    
+                } else if (isButtonB1Active == true && isNextO == true && number == 4) {
+                    
+                    B1buttonOutlet.setTitle("O", for: .normal)
+                    valueB1 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonB1()
+                    break
+                    
+                }
+                
+                
+                
+                
+                if (isButtonB2Active == true && isNextX == true && number == 5) {
+                    
+                    B2buttonOutlet.setTitle("X", for: .normal)
+                    valueB2 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonB2()
+                    break
+                    
+                } else if (isButtonB2Active == true && isNextO == true && number == 5) {
+                    
+                    B2buttonOutlet.setTitle("O", for: .normal)
+                    valueB2 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonB2()
+                    break
+                    
+                }
+                
+                
+                
+                
+                if (isButtonB3Active == true && isNextX == true && number == 6) {
+                    
+                    B3buttonOutlet.setTitle("X", for: .normal)
+                    valueB3 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonB3()
+                    break
+                    
+                } else if (isButtonB3Active == true && isNextO == true && number == 6) {
+                    
+                    B3buttonOutlet.setTitle("O", for: .normal)
+                    valueB3 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonB3()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                if (isButtonC1Active == true && isNextX == true && number == 7) {
+                    
+                    C1buttonOutlet.setTitle("X", for: .normal)
+                    valueC1 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonC1()
+                    break
+                    
+                } else if (isButtonC1Active == true && isNextO == true && number == 7) {
+                    
+                    C1buttonOutlet.setTitle("O", for: .normal)
+                    valueC1 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonC1()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                if (isButtonC2Active == true && isNextX == true && number == 8) {
+                    
+                    C2buttonOutlet.setTitle("X", for: .normal)
+                    valueC2 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonC2()
+                    break
+                    
+                } else if (isButtonC2Active == true && isNextO == true && number == 8) {
+                    
+                    C2buttonOutlet.setTitle("O", for: .normal)
+                    valueC2 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonC2()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                
+                
+                if (isButtonC3Active == true && isNextX == true && number == 9) {
+                    
+                    C3buttonOutlet.setTitle("X", for: .normal)
+                    valueC3 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonC3()
+                    break
+                    
+                } else if (isButtonC3Active == true && isNextO == true && number == 9) {
+                    
+                    C3buttonOutlet.setTitle("O", for: .normal)
+                    valueC3 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonC3()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 
             }
-            
-            
-            
-            
-            var number = Int.random(in: 1...9)
-            
-            
-            
-            if (isButtonA1Active == true && isNextX == true && number == 1) {
-                
-                A1buttonOutlet.setTitle("X", for: .normal)
-                valueA1 = 1
-                isNextX = false
-                isNextO = true
-                buttonA1()
-                break
-                
-            } else if (isButtonA1Active == true && isNextO == true && number == 1) {
-                
-                A1buttonOutlet.setTitle("O", for: .normal)
-                valueA1 = 2
-                isNextX = true
-                isNextO = false
-                buttonA1()
-                break
-                
-            }
-            
-            
-            
-            if (isButtonA2Active == true && isNextX == true && number == 2) {
-                
-                A2buttonOutlet.setTitle("X", for: .normal)
-                valueA2 = 1
-                isNextX = false
-                isNextO = true
-                buttonA2()
-                break
-                
-            } else if (isButtonA2Active == true && isNextO == true && number == 2) {
-                
-                A2buttonOutlet.setTitle("O", for: .normal)
-                valueA2 = 2
-                isNextX = true
-                isNextO = false
-                buttonA2()
-                break
-                
-            }
-            
-            
-            
-            
-            if (isButtonA3Active == true && isNextX == true && number == 3) {
-                
-                A3buttonOutlet.setTitle("X", for: .normal)
-                valueA3 = 1
-                isNextX = false
-                isNextO = true
-                buttonA3()
-                break
-                
-            } else if (isButtonA3Active == true && isNextO == true && number == 3) {
-                
-                A3buttonOutlet.setTitle("O", for: .normal)
-                valueA3 = 2
-                isNextX = true
-                isNextO = false
-                buttonA3()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            
-            
-            if (isButtonB1Active == true && isNextX == true && number == 4) {
-                
-                B1buttonOutlet.setTitle("X", for: .normal)
-                valueB1 = 1
-                isNextX = false
-                isNextO = true
-                buttonB1()
-                break
-                
-            } else if (isButtonB1Active == true && isNextO == true && number == 4) {
-                
-                B1buttonOutlet.setTitle("O", for: .normal)
-                valueB1 = 2
-                isNextX = true
-                isNextO = false
-                buttonB1()
-                break
-                
-            }
-            
-            
-            
-            
-            if (isButtonB2Active == true && isNextX == true && number == 5) {
-                
-                B2buttonOutlet.setTitle("X", for: .normal)
-                valueB2 = 1
-                isNextX = false
-                isNextO = true
-                buttonB2()
-                break
-                
-            } else if (isButtonB2Active == true && isNextO == true && number == 5) {
-                
-                B2buttonOutlet.setTitle("O", for: .normal)
-                valueB2 = 2
-                isNextX = true
-                isNextO = false
-                buttonB2()
-                break
-                
-            }
-            
-            
-            
-            
-            if (isButtonB3Active == true && isNextX == true && number == 6) {
-                
-                B3buttonOutlet.setTitle("X", for: .normal)
-                valueB3 = 1
-                isNextX = false
-                isNextO = true
-                buttonB3()
-                break
-                
-            } else if (isButtonB3Active == true && isNextO == true && number == 6) {
-                
-                B3buttonOutlet.setTitle("O", for: .normal)
-                valueB3 = 2
-                isNextX = true
-                isNextO = false
-                buttonB3()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            if (isButtonC1Active == true && isNextX == true && number == 7) {
-                
-                C1buttonOutlet.setTitle("X", for: .normal)
-                valueC1 = 1
-                isNextX = false
-                isNextO = true
-                buttonC1()
-                break
-                
-            } else if (isButtonC1Active == true && isNextO == true && number == 7) {
-                
-                C1buttonOutlet.setTitle("O", for: .normal)
-                valueC1 = 2
-                isNextX = true
-                isNextO = false
-                buttonC1()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            if (isButtonC2Active == true && isNextX == true && number == 8) {
-                
-                C2buttonOutlet.setTitle("X", for: .normal)
-                valueC2 = 1
-                isNextX = false
-                isNextO = true
-                buttonC2()
-                break
-                
-            } else if (isButtonC2Active == true && isNextO == true && number == 8) {
-                
-                C2buttonOutlet.setTitle("O", for: .normal)
-                valueC2 = 2
-                isNextX = true
-                isNextO = false
-                buttonC2()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            
-            
-            if (isButtonC3Active == true && isNextX == true && number == 9) {
-                
-                C3buttonOutlet.setTitle("X", for: .normal)
-                valueC3 = 1
-                isNextX = false
-                isNextO = true
-                buttonC3()
-                break
-                
-            } else if (isButtonC3Active == true && isNextO == true && number == 9) {
-                
-                C3buttonOutlet.setTitle("O", for: .normal)
-                valueC3 = 2
-                isNextX = true
-                isNextO = false
-                buttonC3()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-          
-            
             
             
         }
@@ -2234,7 +2286,6 @@ class CompTableViewController: UITableViewController {
             valueC1 = 1
             isNextX = false
             isNextO = true
-            isButtonC1Active = false
             
         } else if (isButtonC1Active == true && isNextO == true) {
             
@@ -2242,7 +2293,6 @@ class CompTableViewController: UITableViewController {
             valueC1 = 2
             isNextX = true
             isNextO = false
-            isButtonC1Active = false
             
         }
         
@@ -2259,261 +2309,264 @@ class CompTableViewController: UITableViewController {
         
         
     
-        
-     
-        
-        
-        while (true) {
+        if (loopC1IsActive == true) {
             
+            loopC1IsActive = false
             
-            
-            
-            if (isButtonA1Active == false && isButtonA2Active == false && isButtonA3Active == false && isButtonB1Active == false && isButtonB2Active == false && isButtonB3Active == false && isButtonC1Active == false && isButtonC2Active == false && isButtonC3Active == false) {
+            while (true) {
                 
-                break
+                
+                
+                
+                if (isButtonA1Active == false && isButtonA2Active == false && isButtonA3Active == false && isButtonB1Active == false && isButtonB2Active == false && isButtonB3Active == false && isButtonC1Active == false && isButtonC2Active == false && isButtonC3Active == false) {
+                    
+                    break
+                    
+                }
+                
+                
+                
+                
+                var number = Int.random(in: 1...9)
+                
+                
+                
+                if (isButtonA1Active == true && isNextX == true && number == 1) {
+                    
+                    A1buttonOutlet.setTitle("X", for: .normal)
+                    valueA1 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonA1()
+                    break
+                    
+                } else if (isButtonA1Active == true && isNextO == true && number == 1) {
+                    
+                    A1buttonOutlet.setTitle("O", for: .normal)
+                    valueA1 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonA1()
+                    break
+                    
+                }
+                
+                
+                
+                if (isButtonA2Active == true && isNextX == true && number == 2) {
+                    
+                    A2buttonOutlet.setTitle("X", for: .normal)
+                    valueA2 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonA2()
+                    break
+                    
+                } else if (isButtonA2Active == true && isNextO == true && number == 2) {
+                    
+                    A2buttonOutlet.setTitle("O", for: .normal)
+                    valueA2 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonA2()
+                    break
+                    
+                }
+                
+                
+                
+                
+                if (isButtonA3Active == true && isNextX == true && number == 3) {
+                    
+                    A3buttonOutlet.setTitle("X", for: .normal)
+                    valueA3 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonA3()
+                    break
+                    
+                } else if (isButtonA3Active == true && isNextO == true && number == 3) {
+                    
+                    A3buttonOutlet.setTitle("O", for: .normal)
+                    valueA3 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonA3()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                
+                
+                if (isButtonB1Active == true && isNextX == true && number == 4) {
+                    
+                    B1buttonOutlet.setTitle("X", for: .normal)
+                    valueB1 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonB1()
+                    break
+                    
+                } else if (isButtonB1Active == true && isNextO == true && number == 4) {
+                    
+                    B1buttonOutlet.setTitle("O", for: .normal)
+                    valueB1 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonB1()
+                    break
+                    
+                }
+                
+                
+                
+                
+                if (isButtonB2Active == true && isNextX == true && number == 5) {
+                    
+                    B2buttonOutlet.setTitle("X", for: .normal)
+                    valueB2 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonB2()
+                    break
+                    
+                } else if (isButtonB2Active == true && isNextO == true && number == 5) {
+                    
+                    B2buttonOutlet.setTitle("O", for: .normal)
+                    valueB2 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonB2()
+                    break
+                    
+                }
+                
+                
+                
+                
+                if (isButtonB3Active == true && isNextX == true && number == 6) {
+                    
+                    B3buttonOutlet.setTitle("X", for: .normal)
+                    valueB3 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonB3()
+                    break
+                    
+                } else if (isButtonB3Active == true && isNextO == true && number == 6) {
+                    
+                    B3buttonOutlet.setTitle("O", for: .normal)
+                    valueB3 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonB3()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                if (isButtonC1Active == true && isNextX == true && number == 7) {
+                    
+                    C1buttonOutlet.setTitle("X", for: .normal)
+                    valueC1 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonC1()
+                    break
+                    
+                } else if (isButtonC1Active == true && isNextO == true && number == 7) {
+                    
+                    C1buttonOutlet.setTitle("O", for: .normal)
+                    valueC1 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonC1()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                if (isButtonC2Active == true && isNextX == true && number == 8) {
+                    
+                    C2buttonOutlet.setTitle("X", for: .normal)
+                    valueC2 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonC2()
+                    break
+                    
+                } else if (isButtonC2Active == true && isNextO == true && number == 8) {
+                    
+                    C2buttonOutlet.setTitle("O", for: .normal)
+                    valueC2 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonC2()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                
+                
+                if (isButtonC3Active == true && isNextX == true && number == 9) {
+                    
+                    C3buttonOutlet.setTitle("X", for: .normal)
+                    valueC3 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonC3()
+                    break
+                    
+                } else if (isButtonC3Active == true && isNextO == true && number == 9) {
+                    
+                    C3buttonOutlet.setTitle("O", for: .normal)
+                    valueC3 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonC3()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 
             }
-            
-            
-            
-            
-            var number = Int.random(in: 1...9)
-            
-            
-            
-            if (isButtonA1Active == true && isNextX == true && number == 1) {
-                
-                A1buttonOutlet.setTitle("X", for: .normal)
-                valueA1 = 1
-                isNextX = false
-                isNextO = true
-                buttonA1()
-                break
-                
-            } else if (isButtonA1Active == true && isNextO == true && number == 1) {
-                
-                A1buttonOutlet.setTitle("O", for: .normal)
-                valueA1 = 2
-                isNextX = true
-                isNextO = false
-                buttonA1()
-                break
-                
-            }
-            
-            
-            
-            if (isButtonA2Active == true && isNextX == true && number == 2) {
-                
-                A2buttonOutlet.setTitle("X", for: .normal)
-                valueA2 = 1
-                isNextX = false
-                isNextO = true
-                buttonA2()
-                break
-                
-            } else if (isButtonA2Active == true && isNextO == true && number == 2) {
-                
-                A2buttonOutlet.setTitle("O", for: .normal)
-                valueA2 = 2
-                isNextX = true
-                isNextO = false
-                buttonA2()
-                break
-                
-            }
-            
-            
-            
-            
-            if (isButtonA3Active == true && isNextX == true && number == 3) {
-                
-                A3buttonOutlet.setTitle("X", for: .normal)
-                valueA3 = 1
-                isNextX = false
-                isNextO = true
-                buttonA3()
-                break
-                
-            } else if (isButtonA3Active == true && isNextO == true && number == 3) {
-                
-                A3buttonOutlet.setTitle("O", for: .normal)
-                valueA3 = 2
-                isNextX = true
-                isNextO = false
-                buttonA3()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            
-            
-            if (isButtonB1Active == true && isNextX == true && number == 4) {
-                
-                B1buttonOutlet.setTitle("X", for: .normal)
-                valueB1 = 1
-                isNextX = false
-                isNextO = true
-                buttonB1()
-                break
-                
-            } else if (isButtonB1Active == true && isNextO == true && number == 4) {
-                
-                B1buttonOutlet.setTitle("O", for: .normal)
-                valueB1 = 2
-                isNextX = true
-                isNextO = false
-                buttonB1()
-                break
-                
-            }
-            
-            
-            
-            
-            if (isButtonB2Active == true && isNextX == true && number == 5) {
-                
-                B2buttonOutlet.setTitle("X", for: .normal)
-                valueB2 = 1
-                isNextX = false
-                isNextO = true
-                buttonB2()
-                break
-                
-            } else if (isButtonB2Active == true && isNextO == true && number == 5) {
-                
-                B2buttonOutlet.setTitle("O", for: .normal)
-                valueB2 = 2
-                isNextX = true
-                isNextO = false
-                buttonB2()
-                break
-                
-            }
-            
-            
-            
-            
-            if (isButtonB3Active == true && isNextX == true && number == 6) {
-                
-                B3buttonOutlet.setTitle("X", for: .normal)
-                valueB3 = 1
-                isNextX = false
-                isNextO = true
-                buttonB3()
-                break
-                
-            } else if (isButtonB3Active == true && isNextO == true && number == 6) {
-                
-                B3buttonOutlet.setTitle("O", for: .normal)
-                valueB3 = 2
-                isNextX = true
-                isNextO = false
-                buttonB3()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            if (isButtonC1Active == true && isNextX == true && number == 7) {
-                
-                C1buttonOutlet.setTitle("X", for: .normal)
-                valueC1 = 1
-                isNextX = false
-                isNextO = true
-                buttonC1()
-                break
-                
-            } else if (isButtonC1Active == true && isNextO == true && number == 7) {
-                
-                C1buttonOutlet.setTitle("O", for: .normal)
-                valueC1 = 2
-                isNextX = true
-                isNextO = false
-                buttonC1()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            if (isButtonC2Active == true && isNextX == true && number == 8) {
-                
-                C2buttonOutlet.setTitle("X", for: .normal)
-                valueC2 = 1
-                isNextX = false
-                isNextO = true
-                buttonC2()
-                break
-                
-            } else if (isButtonC2Active == true && isNextO == true && number == 8) {
-                
-                C2buttonOutlet.setTitle("O", for: .normal)
-                valueC2 = 2
-                isNextX = true
-                isNextO = false
-                buttonC2()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            
-            
-            if (isButtonC3Active == true && isNextX == true && number == 9) {
-                
-                C3buttonOutlet.setTitle("X", for: .normal)
-                valueC3 = 1
-                isNextX = false
-                isNextO = true
-                buttonC3()
-                break
-                
-            } else if (isButtonC3Active == true && isNextO == true && number == 9) {
-                
-                C3buttonOutlet.setTitle("O", for: .normal)
-                valueC3 = 2
-                isNextX = true
-                isNextO = false
-                buttonC3()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-          
             
             
             
         }
-        
         
         
         
@@ -2532,7 +2585,6 @@ class CompTableViewController: UITableViewController {
             valueC2 = 1
             isNextX = false
             isNextO = true
-            isButtonC2Active = false
             
         } else if (isButtonC2Active == true && isNextO == true) {
             
@@ -2540,7 +2592,6 @@ class CompTableViewController: UITableViewController {
             valueC2 = 2
             isNextX = true
             isNextO = false
-            isButtonC2Active = false
             
         }
         
@@ -2556,257 +2607,260 @@ class CompTableViewController: UITableViewController {
         
         
         
-    
-        
-     
-        
-        
-        while (true) {
+        if (loopC2IsActive == true) {
+            
+            loopC2IsActive = false
             
             
-            
-            if (isButtonA1Active == false && isButtonA2Active == false && isButtonA3Active == false && isButtonB1Active == false && isButtonB2Active == false && isButtonB3Active == false && isButtonC1Active == false && isButtonC2Active == false && isButtonC3Active == false) {
+            while (true) {
                 
-                break
+                
+                
+                if (isButtonA1Active == false && isButtonA2Active == false && isButtonA3Active == false && isButtonB1Active == false && isButtonB2Active == false && isButtonB3Active == false && isButtonC1Active == false && isButtonC2Active == false && isButtonC3Active == false) {
+                    
+                    break
+                    
+                }
+                
+                
+                
+                
+                var number = Int.random(in: 1...9)
+                
+                
+                
+                if (isButtonA1Active == true && isNextX == true && number == 1) {
+                    
+                    A1buttonOutlet.setTitle("X", for: .normal)
+                    valueA1 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonA1()
+                    break
+                    
+                } else if (isButtonA1Active == true && isNextO == true && number == 1) {
+                    
+                    A1buttonOutlet.setTitle("O", for: .normal)
+                    valueA1 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonA1()
+                    break
+                    
+                }
+                
+                
+                
+                if (isButtonA2Active == true && isNextX == true && number == 2) {
+                    
+                    A2buttonOutlet.setTitle("X", for: .normal)
+                    valueA2 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonA2()
+                    break
+                    
+                } else if (isButtonA2Active == true && isNextO == true && number == 2) {
+                    
+                    A2buttonOutlet.setTitle("O", for: .normal)
+                    valueA2 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonA2()
+                    break
+                    
+                }
+                
+                
+                
+                
+                if (isButtonA3Active == true && isNextX == true && number == 3) {
+                    
+                    A3buttonOutlet.setTitle("X", for: .normal)
+                    valueA3 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonA3()
+                    break
+                    
+                } else if (isButtonA3Active == true && isNextO == true && number == 3) {
+                    
+                    A3buttonOutlet.setTitle("O", for: .normal)
+                    valueA3 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonA3()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                
+                
+                if (isButtonB1Active == true && isNextX == true && number == 4) {
+                    
+                    B1buttonOutlet.setTitle("X", for: .normal)
+                    valueB1 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonB1()
+                    break
+                    
+                } else if (isButtonB1Active == true && isNextO == true && number == 4) {
+                    
+                    B1buttonOutlet.setTitle("O", for: .normal)
+                    valueB1 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonB1()
+                    break
+                    
+                }
+                
+                
+                
+                
+                if (isButtonB2Active == true && isNextX == true && number == 5) {
+                    
+                    B2buttonOutlet.setTitle("X", for: .normal)
+                    valueB2 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonB2()
+                    break
+                    
+                } else if (isButtonB2Active == true && isNextO == true && number == 5) {
+                    
+                    B2buttonOutlet.setTitle("O", for: .normal)
+                    valueB2 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonB2()
+                    break
+                    
+                }
+                
+                
+                
+                
+                if (isButtonB3Active == true && isNextX == true && number == 6) {
+                    
+                    B3buttonOutlet.setTitle("X", for: .normal)
+                    valueB3 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonB3()
+                    break
+                    
+                } else if (isButtonB3Active == true && isNextO == true && number == 6) {
+                    
+                    B3buttonOutlet.setTitle("O", for: .normal)
+                    valueB3 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonB3()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                if (isButtonC1Active == true && isNextX == true && number == 7) {
+                    
+                    C1buttonOutlet.setTitle("X", for: .normal)
+                    valueC1 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonC1()
+                    break
+                    
+                } else if (isButtonC1Active == true && isNextO == true && number == 7) {
+                    
+                    C1buttonOutlet.setTitle("O", for: .normal)
+                    valueC1 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonC1()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                if (isButtonC2Active == true && isNextX == true && number == 8) {
+                    
+                    C2buttonOutlet.setTitle("X", for: .normal)
+                    valueC2 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonC2()
+                    break
+                    
+                } else if (isButtonC2Active == true && isNextO == true && number == 8) {
+                    
+                    C2buttonOutlet.setTitle("O", for: .normal)
+                    valueC2 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonC2()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                
+                
+                if (isButtonC3Active == true && isNextX == true && number == 9) {
+                    
+                    C3buttonOutlet.setTitle("X", for: .normal)
+                    valueC3 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonC3()
+                    break
+                    
+                } else if (isButtonC3Active == true && isNextO == true && number == 9) {
+                    
+                    C3buttonOutlet.setTitle("O", for: .normal)
+                    valueC3 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonC3()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 
             }
-            
-            
-            
-            
-            var number = Int.random(in: 1...9)
-            
-            
-            
-            if (isButtonA1Active == true && isNextX == true && number == 1) {
-                
-                A1buttonOutlet.setTitle("X", for: .normal)
-                valueA1 = 1
-                isNextX = false
-                isNextO = true
-                buttonA1()
-                break
-                
-            } else if (isButtonA1Active == true && isNextO == true && number == 1) {
-                
-                A1buttonOutlet.setTitle("O", for: .normal)
-                valueA1 = 2
-                isNextX = true
-                isNextO = false
-                buttonA1()
-                break
-                
-            }
-            
-            
-            
-            if (isButtonA2Active == true && isNextX == true && number == 2) {
-                
-                A2buttonOutlet.setTitle("X", for: .normal)
-                valueA2 = 1
-                isNextX = false
-                isNextO = true
-                buttonA2()
-                break
-                
-            } else if (isButtonA2Active == true && isNextO == true && number == 2) {
-                
-                A2buttonOutlet.setTitle("O", for: .normal)
-                valueA2 = 2
-                isNextX = true
-                isNextO = false
-                buttonA2()
-                break
-                
-            }
-            
-            
-            
-            
-            if (isButtonA3Active == true && isNextX == true && number == 3) {
-                
-                A3buttonOutlet.setTitle("X", for: .normal)
-                valueA3 = 1
-                isNextX = false
-                isNextO = true
-                buttonA3()
-                break
-                
-            } else if (isButtonA3Active == true && isNextO == true && number == 3) {
-                
-                A3buttonOutlet.setTitle("O", for: .normal)
-                valueA3 = 2
-                isNextX = true
-                isNextO = false
-                buttonA3()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            
-            
-            if (isButtonB1Active == true && isNextX == true && number == 4) {
-                
-                B1buttonOutlet.setTitle("X", for: .normal)
-                valueB1 = 1
-                isNextX = false
-                isNextO = true
-                buttonB1()
-                break
-                
-            } else if (isButtonB1Active == true && isNextO == true && number == 4) {
-                
-                B1buttonOutlet.setTitle("O", for: .normal)
-                valueB1 = 2
-                isNextX = true
-                isNextO = false
-                buttonB1()
-                break
-                
-            }
-            
-            
-            
-            
-            if (isButtonB2Active == true && isNextX == true && number == 5) {
-                
-                B2buttonOutlet.setTitle("X", for: .normal)
-                valueB2 = 1
-                isNextX = false
-                isNextO = true
-                buttonB2()
-                break
-                
-            } else if (isButtonB2Active == true && isNextO == true && number == 5) {
-                
-                B2buttonOutlet.setTitle("O", for: .normal)
-                valueB2 = 2
-                isNextX = true
-                isNextO = false
-                buttonB2()
-                break
-                
-            }
-            
-            
-            
-            
-            if (isButtonB3Active == true && isNextX == true && number == 6) {
-                
-                B3buttonOutlet.setTitle("X", for: .normal)
-                valueB3 = 1
-                isNextX = false
-                isNextO = true
-                buttonB3()
-                break
-                
-            } else if (isButtonB3Active == true && isNextO == true && number == 6) {
-                
-                B3buttonOutlet.setTitle("O", for: .normal)
-                valueB3 = 2
-                isNextX = true
-                isNextO = false
-                buttonB3()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            if (isButtonC1Active == true && isNextX == true && number == 7) {
-                
-                C1buttonOutlet.setTitle("X", for: .normal)
-                valueC1 = 1
-                isNextX = false
-                isNextO = true
-                buttonC1()
-                break
-                
-            } else if (isButtonC1Active == true && isNextO == true && number == 7) {
-                
-                C1buttonOutlet.setTitle("O", for: .normal)
-                valueC1 = 2
-                isNextX = true
-                isNextO = false
-                buttonC1()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            if (isButtonC2Active == true && isNextX == true && number == 8) {
-                
-                C2buttonOutlet.setTitle("X", for: .normal)
-                valueC2 = 1
-                isNextX = false
-                isNextO = true
-                buttonC2()
-                break
-                
-            } else if (isButtonC2Active == true && isNextO == true && number == 8) {
-                
-                C2buttonOutlet.setTitle("O", for: .normal)
-                valueC2 = 2
-                isNextX = true
-                isNextO = false
-                buttonC2()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            
-            
-            if (isButtonC3Active == true && isNextX == true && number == 9) {
-                
-                C3buttonOutlet.setTitle("X", for: .normal)
-                valueC3 = 1
-                isNextX = false
-                isNextO = true
-                buttonC3()
-                break
-                
-            } else if (isButtonC3Active == true && isNextO == true && number == 9) {
-                
-                C3buttonOutlet.setTitle("O", for: .normal)
-                valueC3 = 2
-                isNextX = true
-                isNextO = false
-                buttonC3()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-          
-            
             
             
         }
@@ -2830,7 +2884,6 @@ class CompTableViewController: UITableViewController {
             valueC3 = 1
             isNextX = false
             isNextO = true
-            isButtonC3Active = false
             
         } else if (isButtonC3Active == true && isNextO == true) {
             
@@ -2838,7 +2891,6 @@ class CompTableViewController: UITableViewController {
             valueC3 = 2
             isNextX = true
             isNextO = false
-            isButtonC3Active = false
             
         }
         
@@ -2854,258 +2906,262 @@ class CompTableViewController: UITableViewController {
         
         
         
-    
-        
-     
-        
-        
-        while (true) {
+        if (loopC3IsActive == true) {
+            
+            loopC3IsActive = false
             
             
-            
-            
-            
-            if (isButtonA1Active == false && isButtonA2Active == false && isButtonA3Active == false && isButtonB1Active == false && isButtonB2Active == false && isButtonB3Active == false && isButtonC1Active == false && isButtonC2Active == false && isButtonC3Active == false) {
+            while (true) {
                 
-                break
+                
+                
+                
+                
+                if (isButtonA1Active == false && isButtonA2Active == false && isButtonA3Active == false && isButtonB1Active == false && isButtonB2Active == false && isButtonB3Active == false && isButtonC1Active == false && isButtonC2Active == false && isButtonC3Active == false) {
+                    
+                    break
+                    
+                }
+                
+                
+                
+                
+                var number = Int.random(in: 1...9)
+                
+                
+                
+                if (isButtonA1Active == true && isNextX == true && number == 1) {
+                    
+                    A1buttonOutlet.setTitle("X", for: .normal)
+                    valueA1 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonA1()
+                    break
+                    
+                } else if (isButtonA1Active == true && isNextO == true && number == 1) {
+                    
+                    A1buttonOutlet.setTitle("O", for: .normal)
+                    valueA1 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonA1()
+                    break
+                    
+                }
+                
+                
+                
+                if (isButtonA2Active == true && isNextX == true && number == 2) {
+                    
+                    A2buttonOutlet.setTitle("X", for: .normal)
+                    valueA2 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonA2()
+                    break
+                    
+                } else if (isButtonA2Active == true && isNextO == true && number == 2) {
+                    
+                    A2buttonOutlet.setTitle("O", for: .normal)
+                    valueA2 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonA2()
+                    break
+                    
+                }
+                
+                
+                
+                
+                if (isButtonA3Active == true && isNextX == true && number == 3) {
+                    
+                    A3buttonOutlet.setTitle("X", for: .normal)
+                    valueA3 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonA3()
+                    break
+                    
+                } else if (isButtonA3Active == true && isNextO == true && number == 3) {
+                    
+                    A3buttonOutlet.setTitle("O", for: .normal)
+                    valueA3 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonA3()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                
+                
+                if (isButtonB1Active == true && isNextX == true && number == 4) {
+                    
+                    B1buttonOutlet.setTitle("X", for: .normal)
+                    valueB1 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonB1()
+                    break
+                    
+                } else if (isButtonB1Active == true && isNextO == true && number == 4) {
+                    
+                    B1buttonOutlet.setTitle("O", for: .normal)
+                    valueB1 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonB1()
+                    break
+                    
+                }
+                
+                
+                
+                
+                if (isButtonB2Active == true && isNextX == true && number == 5) {
+                    
+                    B2buttonOutlet.setTitle("X", for: .normal)
+                    valueB2 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonB2()
+                    break
+                    
+                } else if (isButtonB2Active == true && isNextO == true && number == 5) {
+                    
+                    B2buttonOutlet.setTitle("O", for: .normal)
+                    valueB2 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonB2()
+                    break
+                    
+                }
+                
+                
+                
+                
+                if (isButtonB3Active == true && isNextX == true && number == 6) {
+                    
+                    B3buttonOutlet.setTitle("X", for: .normal)
+                    valueB3 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonB3()
+                    break
+                    
+                } else if (isButtonB3Active == true && isNextO == true && number == 6) {
+                    
+                    B3buttonOutlet.setTitle("O", for: .normal)
+                    valueB3 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonB3()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                if (isButtonC1Active == true && isNextX == true && number == 7) {
+                    
+                    C1buttonOutlet.setTitle("X", for: .normal)
+                    valueC1 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonC1()
+                    break
+                    
+                } else if (isButtonC1Active == true && isNextO == true && number == 7) {
+                    
+                    C1buttonOutlet.setTitle("O", for: .normal)
+                    valueC1 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonC1()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                if (isButtonC2Active == true && isNextX == true && number == 8) {
+                    
+                    C2buttonOutlet.setTitle("X", for: .normal)
+                    valueC2 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonC2()
+                    break
+                    
+                } else if (isButtonC2Active == true && isNextO == true && number == 8) {
+                    
+                    C2buttonOutlet.setTitle("O", for: .normal)
+                    valueC2 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonC2()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                
+                
+                if (isButtonC3Active == true && isNextX == true && number == 9) {
+                    
+                    C3buttonOutlet.setTitle("X", for: .normal)
+                    valueC3 = 1
+                    isNextX = false
+                    isNextO = true
+                    buttonC3()
+                    break
+                    
+                } else if (isButtonC3Active == true && isNextO == true && number == 9) {
+                    
+                    C3buttonOutlet.setTitle("O", for: .normal)
+                    valueC3 = 2
+                    isNextX = true
+                    isNextO = false
+                    buttonC3()
+                    break
+                    
+                }
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 
             }
-            
-            
-            
-            
-            var number = Int.random(in: 1...9)
-            
-            
-            
-            if (isButtonA1Active == true && isNextX == true && number == 1) {
-                
-                A1buttonOutlet.setTitle("X", for: .normal)
-                valueA1 = 1
-                isNextX = false
-                isNextO = true
-                buttonA1()
-                break
-                
-            } else if (isButtonA1Active == true && isNextO == true && number == 1) {
-                
-                A1buttonOutlet.setTitle("O", for: .normal)
-                valueA1 = 2
-                isNextX = true
-                isNextO = false
-                buttonA1()
-                break
-                
-            }
-            
-            
-            
-            if (isButtonA2Active == true && isNextX == true && number == 2) {
-                
-                A2buttonOutlet.setTitle("X", for: .normal)
-                valueA2 = 1
-                isNextX = false
-                isNextO = true
-                buttonA2()
-                break
-                
-            } else if (isButtonA2Active == true && isNextO == true && number == 2) {
-                
-                A2buttonOutlet.setTitle("O", for: .normal)
-                valueA2 = 2
-                isNextX = true
-                isNextO = false
-                buttonA2()
-                break
-                
-            }
-            
-            
-            
-            
-            if (isButtonA3Active == true && isNextX == true && number == 3) {
-                
-                A3buttonOutlet.setTitle("X", for: .normal)
-                valueA3 = 1
-                isNextX = false
-                isNextO = true
-                buttonA3()
-                break
-                
-            } else if (isButtonA3Active == true && isNextO == true && number == 3) {
-                
-                A3buttonOutlet.setTitle("O", for: .normal)
-                valueA3 = 2
-                isNextX = true
-                isNextO = false
-                buttonA3()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            
-            
-            if (isButtonB1Active == true && isNextX == true && number == 4) {
-                
-                B1buttonOutlet.setTitle("X", for: .normal)
-                valueB1 = 1
-                isNextX = false
-                isNextO = true
-                buttonB1()
-                break
-                
-            } else if (isButtonB1Active == true && isNextO == true && number == 4) {
-                
-                B1buttonOutlet.setTitle("O", for: .normal)
-                valueB1 = 2
-                isNextX = true
-                isNextO = false
-                buttonB1()
-                break
-                
-            }
-            
-            
-            
-            
-            if (isButtonB2Active == true && isNextX == true && number == 5) {
-                
-                B2buttonOutlet.setTitle("X", for: .normal)
-                valueB2 = 1
-                isNextX = false
-                isNextO = true
-                buttonB2()
-                break
-                
-            } else if (isButtonB2Active == true && isNextO == true && number == 5) {
-                
-                B2buttonOutlet.setTitle("O", for: .normal)
-                valueB2 = 2
-                isNextX = true
-                isNextO = false
-                buttonB2()
-                break
-                
-            }
-            
-            
-            
-            
-            if (isButtonB3Active == true && isNextX == true && number == 6) {
-                
-                B3buttonOutlet.setTitle("X", for: .normal)
-                valueB3 = 1
-                isNextX = false
-                isNextO = true
-                buttonB3()
-                break
-                
-            } else if (isButtonB3Active == true && isNextO == true && number == 6) {
-                
-                B3buttonOutlet.setTitle("O", for: .normal)
-                valueB3 = 2
-                isNextX = true
-                isNextO = false
-                buttonB3()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            if (isButtonC1Active == true && isNextX == true && number == 7) {
-                
-                C1buttonOutlet.setTitle("X", for: .normal)
-                valueC1 = 1
-                isNextX = false
-                isNextO = true
-                buttonC1()
-                break
-                
-            } else if (isButtonC1Active == true && isNextO == true && number == 7) {
-                
-                C1buttonOutlet.setTitle("O", for: .normal)
-                valueC1 = 2
-                isNextX = true
-                isNextO = false
-                buttonC1()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            if (isButtonC2Active == true && isNextX == true && number == 8) {
-                
-                C2buttonOutlet.setTitle("X", for: .normal)
-                valueC2 = 1
-                isNextX = false
-                isNextO = true
-                buttonC2()
-                break
-                
-            } else if (isButtonC2Active == true && isNextO == true && number == 8) {
-                
-                C2buttonOutlet.setTitle("O", for: .normal)
-                valueC2 = 2
-                isNextX = true
-                isNextO = false
-                buttonC2()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            
-            
-            if (isButtonC3Active == true && isNextX == true && number == 9) {
-                
-                C3buttonOutlet.setTitle("X", for: .normal)
-                valueC3 = 1
-                isNextX = false
-                isNextO = true
-                buttonC3()
-                break
-                
-            } else if (isButtonC3Active == true && isNextO == true && number == 9) {
-                
-                C3buttonOutlet.setTitle("O", for: .normal)
-                valueC3 = 2
-                isNextX = true
-                isNextO = false
-                buttonC3()
-                break
-                
-            }
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-          
             
             
             
